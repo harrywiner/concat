@@ -1,7 +1,7 @@
 const con = new RegExp(/[b,c,d,f,g,h,j,k,l,m,n,p,q,r,s,t,v,w,x,y,z]/);
 const vow = new RegExp(/[a,e,i,o,u,y]/);
 
-const basic = new RegExp(con.source + "*" + "|" + vow.source);
+const basic = new RegExp(con.source + "*" + "|" + vow.source, "i");
 
 module.exports = {
   concat: function (wordA, wordB) {
